@@ -1,0 +1,228 @@
+/* Responsive Styles */
+
+/* Large Devices (Desktops) */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        transition: var(--transition);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Small Devices (Landscape Phones) */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .services-grid,
+    .products-grid,
+    .features-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones) */
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 8px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 0.5rem;
+    }
+    .nav-menu {
+        width: 100vw;
+        left: -100vw;
+        top: 60px;
+        font-size: 1.1rem;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-toggle {
+        margin-left: auto;
+    }
+    .hero {
+        min-height: 60vh;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .hero-content {
+        padding: 0 4px;
+    }
+    .services-grid,
+    .products-grid,
+    .features-grid,
+    .footer-grid,
+    .gallery-masonry,
+    .gallery-grid,
+    .contact-grid,
+    .form-map-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+    }
+    .gallery-tile img,
+    .gallery-item img {
+        height: 160px !important;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .cta-buttons .btn,
+    .btn,
+    button,
+    input[type="submit"] {
+        font-size: 1.1rem;
+        padding: 12px 0;
+        width: 100%;
+    }
+    .contact-form,
+    .map-container {
+        padding: 12px !important;
+    }
+    .modal-content {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem !important;
+        max-width: 99vw !important;
+    }
+    .customer-carousel.moving-logos {
+        overflow-x: auto !important;
+        gap: 18px !important;
+        padding-bottom: 8px;
+    }
+    .customer-carousel.moving-logos > div {
+        min-width: 120px !important;
+        padding: 10px 10px !important;
+    }
+    .footer {
+        padding: 24px 0 10px !important;
+    }
+    .footer-col h3 {
+        font-size: 1.1rem;
+    }
+    .footer-col ul, .footer-col p {
+        font-size: 0.98rem;
+    }
+    .whatsapp-btn, .back-to-top {
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+        bottom: 16px !important;
+        right: 16px !important;
+    }
+    .section-title {
+        font-size: 1.3rem;
+    }
+    .form-group label {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero h1, .section-title {
+        font-size: 1.1rem !important;
+    }
+    .hero p, .footer-col p, .footer-col ul, .form-group label {
+        font-size: 0.95rem !important;
+    }
+    .btn, button, input[type="submit"] {
+        font-size: 0.98rem !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .cta,
+    .footer,
+    .whatsapp-btn {
+        display: none;
+    }
+
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .section-title::after {
+        display: none;
+    }
+} 
