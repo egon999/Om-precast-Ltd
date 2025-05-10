@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Om Precast Cement Allied Product Industries</title>
+    <meta name="description" content="Gallery of Om Precast Cement Allied Product Industries - Explore our construction and precast product excellence in photos.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .gallery-hero {
+            background: linear-gradient(rgba(26,35,126,0.85),rgba(44,62,80,0.85)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            min-height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: #fff;
+            text-align: center;
+        }
+        .gallery-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .gallery-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .gallery-masonry {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        .gallery-tile {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+            overflow: hidden;
+            position: relative;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .gallery-tile:hover {
+            box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+            transform: translateY(-8px) scale(1.02);
+        }
+        .gallery-tile img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 1rem 1.2rem;
+            color: #263238;
+            background: #f5f6fa;
+            font-size: 1rem;
+            min-height: 60px;
+        }
+        @media (max-width: 600px) {
+            .gallery-hero h1 { font-size: 2rem; }
+            .gallery-masonry { gap: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo" style="font-size:2rem;font-weight:700;color:#1a237e;letter-spacing:1px;">
+                Om Precast Cement Allied Product Industries
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="quote.html" class="btn btn-primary">Get Quote</a>
+                <a href="tel:+918073548078" class="btn btn-secondary"><i class="fas fa-phone"></i> Call Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div>
+            <h1>Our Gallery</h1>
+            <p>Explore our construction excellence, precast products, and completed projects. Authentic industrial and site photos from Om Precast Cement Allied Product Industries.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Masonry/Grid -->
+    <section class="container">
+        <div class="gallery-masonry animate-on-scroll">
+            <div class="gallery-tile">
+                <img src="product-img-1.jpg" alt="Precast Compound Wall - Site Installation" class="gallery-img">
+            </div>
+            <div class="gallery-tile">
+                <img src="product-img-2.jpg" alt="RCC Fencing Poles - Stacked at Yard" class="gallery-img">
+            </div>
+            <div class="gallery-tile">
+                <img src="product-img-3.jpg" alt="Precast Toilet Block - Ready for Use" class="gallery-img">
+            </div>
+            <div class="gallery-tile" style="display:flex;align-items:center;justify-content:center;min-height:220px;background:#f5f6fa;color:#aaa;font-size:1.2rem;">
+                <span>More images coming soon...</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Om Precast Cement Allied Product Industries - Leading provider of precast and cement construction materials, serving excellence since 2015.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> 08460407690, 8073548078, 9845737777</li>
+                        <li><i class="fas fa-envelope"></i> info@omprecast.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Plot No. 73/P3, Nandoor Kesaratagi Industrial Area, KIADB, Shahabad Road, Kalaburagi PIN - 585102</li>
+                        <li><i class="fas fa-id-card"></i> GSTIN: 29BGVPM0372H1ZW</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Om Precast Cement Allied Product Industries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918460407690" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#ff6d00;color:#fff;border:none;border-radius:50%;font-size:2rem;z-index:999;box-shadow:0 2px 8px #0002;cursor:pointer;align-items:center;justify-content:center;"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+    // Image Modal for Gallery
+    document.querySelectorAll('.gallery-img').forEach(img => {
+        img.addEventListener('click', function() {
+            const modal = document.createElement('div');
+            modal.className = 'image-modal';
+            modal.innerHTML = `<div class='modal-content'><span class='close-modal'>&times;</span><img src='${this.src}' alt='${this.alt}'></div>`;
+            document.body.appendChild(modal);
+            modal.querySelector('.close-modal').onclick = () => modal.remove();
+            modal.onclick = e => { if(e.target === modal) modal.remove(); };
+        });
+    });
+    // Back to Top Button
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 300) backToTop.style.display = 'flex';
+        else backToTop.style.display = 'none';
+    });
+    backToTop.onclick = () => window.scrollTo({top:0,behavior:'smooth'});
+    // Animate on scroll
+    function animateOnScroll() {
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if(rect.top < window.innerHeight - 60) el.classList.add('visible');
+        });
+    }
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('DOMContentLoaded', animateOnScroll);
+    </script>
+</body>
+</html> 

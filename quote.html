@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote | Om Precast Cement Allied Product Industries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .quote-hero-bg {
+            background: linear-gradient(rgba(26,35,126,0.85),rgba(44,62,80,0.85)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            min-height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .quote-hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://www.transparenttextures.com/patterns/concrete-wall.png') repeat;
+            opacity: 0.18;
+            z-index: 1;
+        }
+        .quote-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-align: center;
+        }
+        .quote-main-section {
+            background: #eceff1;
+            padding: 60px 0;
+        }
+        .quote-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .quote-form-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+            padding: 40px 32px;
+            flex: 1 1 380px;
+            min-width: 320px;
+            max-width: 500px;
+            position: relative;
+        }
+        .quote-form-card .fa-industry {
+            font-size: 2.5rem;
+            color: #ff6d00;
+            margin-bottom: 1rem;
+        }
+        .quote-form-card h2 {
+            color: #1a237e;
+            margin-bottom: 1.5rem;
+        }
+        .quote-form input, .quote-form select, .quote-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-bottom: 18px;
+            transition: border 0.3s;
+        }
+        .quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus {
+            border-color: #ff6d00;
+            outline: none;
+        }
+        .quote-form button {
+            width: 100%;
+            padding: 14px;
+            background: #ff6d00;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .quote-form button:hover {
+            background: #1a237e;
+        }
+        .quote-sidebar-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+            padding: 40px 32px;
+            flex: 1 1 320px;
+            min-width: 280px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .quote-sidebar-card .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+        }
+        .quote-sidebar-card .whatsapp-btn {
+            display: inline-block;
+            background: #25d366;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .quote-sidebar-card .whatsapp-btn:hover {
+            background: #128c7e;
+        }
+        .why-choose-quote {
+            margin-top: 40px;
+            background: #f5f6fa;
+            border-radius: 14px;
+            padding: 32px 24px;
+            box-shadow: 0 2px 12px #1a237e11;
+        }
+        .why-choose-quote h3 {
+            color: #1a237e;
+            margin-bottom: 1.2rem;
+        }
+        .why-choose-quote ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            list-style: none;
+            padding: 0;
+        }
+        .why-choose-quote li {
+            flex: 1 1 180px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.05rem;
+            color: #37474f;
+        }
+        .why-choose-quote li i {
+            color: #ff6d00;
+            font-size: 1.5rem;
+        }
+        @media (max-width: 900px) {
+            .quote-flex { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://i.imgur.com/8Km9tLL.png" alt="Om Precast Cement Allied Product Industries Logo" style="height:50px;" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_construction.png';">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="quote.html" class="btn btn-primary">Get Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="quote-hero-bg">
+        <div class="quote-hero-content">
+            <h1 style="font-size:2.8rem;">Request a Quote</h1>
+            <p style="font-size:1.2rem;max-width:600px;margin:0 auto;">Get the best prices and solutions for your construction needs from Om Precast Cement Allied Product Industries.</p>
+        </div>
+    </section>
+    <section class="quote-main-section">
+        <div class="quote-flex">
+            <div class="quote-form-card">
+                <i class="fas fa-industry"></i>
+                <h2>Get a Free Quote</h2>
+                <form class="quote-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="text" name="company" placeholder="Company Name">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <select name="product" required>
+                        <option value="">Select a product</option>
+                        <option value="Precast Compound Wall">Precast Compound Wall</option>
+                        <option value="RCC Fencing Poles">RCC Fencing Poles</option>
+                        <option value="Precast Toilet Blocks">Precast Toilet Blocks</option>
+                        <option value="RCC Window Frames">RCC Window Frames</option>
+                        <option value="Kerb Stones & Pavers">Kerb Stones & Pavers</option>
+                        <option value="Solid Blocks">Solid Blocks</option>
+                        <option value="Other">Other (specify below)</option>
+                    </select>
+                    <input type="number" name="quantity" placeholder="Quantity (approx.)">
+                    <textarea name="message" rows="4" placeholder="Additional Details (Project location, delivery timeline, etc.)"></textarea>
+                    <button type="submit"><i class="fas fa-file-invoice"></i> Request Quote</button>
+                </form>
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Concrete Pavers" style="width:100%;border-radius:10px;margin-top:18px;box-shadow:0 2px 12px #1a237e22;">
+            </div>
+            <div class="quote-sidebar-card">
+                <div>
+                    <h3 style="color:#1a237e;margin-bottom:10px;">Contact Us Directly</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Om Precast Cement Allied Product Industries, Near Sagar Hotel, Bypass Road, Dewas, Madhya Pradesh 455001</p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:+919993366661">+91 99933 66661</a>, <a href="tel:+919993366662">+91 99933 66662</a></p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:omprecastdewas@gmail.com">omprecastdewas@gmail.com</a></p>
+                    <p><i class="fas fa-id-card"></i> <strong>GSTIN:</strong> 23AAJFO0497B1Z2</p>
+                    <p><i class="fas fa-user-tie"></i> <strong>Owner:</strong> Mr. Omprakash Sahu</p>
+                    <p><i class="fas fa-clock"></i> <strong>Business Hours:</strong> Mon-Sat: 8am - 7pm</p>
+                    <a href="https://wa.me/919993366661" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+                <div class="map-container" style="margin-top:18px;">
+                    <iframe src="https://www.google.com/maps?q=Om+Precast+Cement+Allied+Product+Industries,+Near+Sagar+Hotel,+Bypass+Road,+Dewas,+Madhya+Pradesh+455001&output=embed" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="why-choose-quote" style="max-width:1200px;margin:40px auto 0 auto;">
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li><i class="fas fa-hard-hat"></i> Experienced Construction Team</li>
+                <li><i class="fas fa-cubes"></i> Premium Concrete & Precast Products</li>
+                <li><i class="fas fa-truck"></i> Fast Delivery & Installation</li>
+                <li><i class="fas fa-certificate"></i> ISO Certified Quality</li>
+                <li><i class="fas fa-headset"></i> 24/7 Support</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Om Precast Cement Allied Product Industries - Leading provider of precast and cement construction materials, serving excellence since 2015.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +91 99933 66661, +91 99933 66662</li>
+                        <li><i class="fas fa-envelope"></i> omprecastdewas@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Near Sagar Hotel, Bypass Road, Dewas, MP 455001</li>
+                        <li><i class="fas fa-id-card"></i> GSTIN: 23AAJFO0497B1Z2</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Om Precast Cement Allied Product Industries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/919993366661" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html> 
